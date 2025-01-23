@@ -1,0 +1,163 @@
+/* Banner */
+
+#banner {
+    background-attachment: fixed;
+    background-color: #222222;
+    background-image: url("../Images/BackGround_Banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 21;
+}
+
+    #banner:before {
+        content: '';
+        display: inline-block;
+        height: 100vh;
+        vertical-align: middle;
+        width: 1%;
+    }
+
+    #banner:after {
+        background-image: -webkit-linear-gradient(top, rgba(34, 35, 48, 0.95), #1125c0c1), url("images/overlay.png");
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    #banner .content {
+        display: inline-block;
+        margin-right: 1%;
+        max-width: 95%;
+        padding: 6em;
+        position: relative;
+        text-align: right;
+        vertical-align: middle;
+        z-index: 1;
+        margin-top: 100px;
+    }
+
+    #banner .content header {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #banner .content header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    #banner .content header p {
+        margin: 0.5em 0 0 0;
+        font-size: 1.5em;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    #banner .content .image {
+        border-radius: 100%;
+        display: inline-block;
+        height: 18em;
+        margin-left: 3em;
+        vertical-align: middle;
+        width: 18em;
+        }
+
+    #banner .content .image img {
+        border-radius: 100%;
+        display: block;
+        width: 100%;
+    }
+
+    #banner .About {
+        display: inline-block;
+        max-width: 95%;
+        padding: 20em;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 1;
+    }
+
+
+    #banner .About h2 {
+        font-size: 2.5em;
+        margin: 0;
+        padding: 1em;
+        color: #ffffff;
+    }
+
+    #banner .About p {
+        font-size: 1em;
+        text-align: center;
+        color: #ffffff;
+    }
+    #banner .About p1 {
+        font-size: 1.5em;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #banner .Software_Engineering_Section {
+        display: inline-block;
+        max-width: 95%;
+        padding: 20em;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 1;
+    }
+
+
+    #banner .Software_Engineering_Section header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        padding: 1em;
+        color: #ffffff;
+    }
+
+    #banner .Software_Engineering_Section header p {
+        font-size: 1.5em;
+        text-align: center;
+        color: #ffffff;
+    }
+    #banner .Website_Design_Section {
+        display: inline-block;
+        max-width: 95%;
+        padding: 20em;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 1;
+    }
+
+
+    #banner .Website_Design_Section header h2 {
+        font-size: 2.5em;
+        margin: 0;
+        padding: 1em;
+        color: #ffffff;
+    }
+
+    #banner .Website_Design_Section header p {
+        font-size: 1.5em;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #banner .AboutArrows
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+    } 
+
+

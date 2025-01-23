@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<link rel="stylesheet" href="CSS_Files/DropDownBar.css" />
+<link rel="stylesheet" href="CSS_Files/DropDownBarDesign.css" />
+<link rel="stylesheet" href="CSS_Files/NewMainMenu.css" />
+
+<style>
+html
+{
+    scroll-behavior: smooth;
+}
+</style>
+
+<!-- ============================================ -->
+<!--                    Common	                  -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container" id="TopOfPage">
+        <!--This section is the icons for LinkedIn and Github!-->
+		<div class="cs-top-social cs-logo">
+			<a href="https://github.com/XYFrenzies" class="cs-social-link">
+				<img class="cs-social-GitHub" src="Images/GitHub_Logo.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+			</a>
+			<a href="https://www.linkedin.com/in/benjamin-mcdonalddev/" class="cs-social-link">
+				<img class="cs-social-LinkedIn" src="Images/Linkedin_Icon.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+			</a>
+		</div>
+        <!--Navigation List-->
+        <a href="IndexMain.html#banner" class="cs-button-solid cs-nav-button">Home</a>
+        <nav class="cs-nav" role="navigation">		
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <!--The current dropdown for all classes-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            <a class="cs-button-solid cs-nav-button">Experience</a>
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="IndexMain.html#DisplayAboutSection" class="cs-li-link cs-drop-link">About</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="IndexMain.html#Software_Engineering" class="cs-li-link cs-drop-link">Software Engineer</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="IndexMain.html#Website_Design" class="cs-li-link cs-drop-link">Web Developer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+		<a href="ContactMe.html" class="cs-button-solid cs-nav-button">Contact Me</a>
+    </div>
+</header>
+
+
+
+<!-- ============================================ -->
+<!--                    Body	                  -->
+<!-- ============================================ -->
+<body>
+<section id="banner">
+    <div class="content">
+        <header>
+             <h2>My Name is Benjamin McDonald</h2>
+                <p>- Software Engineer<br />
+                   - Web Developer</p>
+        </header>
+                <span class="image"><img src="Images/PortfolioPicture.png" alt="" /></span>
+                <div class="Arrow">
+                    <a href="IndexMain.html#DisplayAboutSection" >
+                        <img class="AboutArrows" src="Images/DownArrow.png" width="200" height="100" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+    </div>
+
+
+
+    <div class ="About" id="DisplayAboutSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-medium">
+                    <header>
+                        <h2>About Me</h2>
+                        <button onclick="DisplayText(aboutText); this.style.display = 'none';" id="About_button"> Click For More </button>
+                        <p1 class="AboutSection">Hi! My Name is Benjamin McDonald and I am a Software Engineer currently working for Light & Wonder!</p1>
+                    </header>
+                    
+                </div>
+                <div class="col-4 col-12-medium">
+                    <p class="AboutSection">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                    Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                    nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+                    augue varius tempus lobortis porttitor accumsan consequat
+                    adipiscing lorem dolor.</p>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <p class="AboutSection">Morbi enim nascetur et placerat lorem sed iaculis neque ante
+                    adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+                    Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+                    mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+                    ipsum dolor nullam.</p>
+                </div>
+            </div>
+            <div class="Arrow">
+                <a href="IndexMain.html#Software_Engineering" >
+                    <img class="AboutArrows" src="Images/DownArrow.png" width="200" height="100" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Software_Engineering_Section" id="Software_Engineering">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-12-medium">
+                <header>
+                    <h2>Software Engineering</h2>
+                    <button onclick="DisplayText(softwareText); this.style.display = 'none';" id="Software_button"> Click For More </button>
+                    <p class="SoftwareEngineer">I am a Software Engineer Currently working for Light & Wonder</p>
+                </header>
+                
+            </div>
+            <div class="col-4 col-12-medium">
+                <p class="SoftwareEngineer">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+                augue varius tempus lobortis porttitor accumsan consequat
+                adipiscing lorem dolor.</p>
+            </div>
+            <div class="col-4 col-12-medium">
+                <p class="SoftwareEngineer">Morbi enim nascetur et placerat lorem sed iaculis neque ante
+                adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+                Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+                mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+                ipsum dolor nullam.</p>
+            </div>
+        </div>
+        <div class="Arrow">
+            <a href="IndexMain.html#Website_Design" >
+                <img class="AboutArrows" src="Images/DownArrow.png" width="200" height="100" aria-hidden="true" decoding="async">
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="Website_Design_Section" id="Website_Design">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-12-medium">
+                <header>
+                    <h2>Website Design</h2>
+                    <button onclick="DisplayText(websiteText); this.style.display = 'none';" id="Website_button"> Click For More </button>
+                    <p class="Websites">I am a Software Engineer Currently working for Light & Wonder</p>
+                </header>
+                
+            </div>
+            <div class="col-4 col-12-medium">
+                <p class="Websites">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+                Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+                nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+                augue varius tempus lobortis porttitor accumsan consequat
+                adipiscing lorem dolor.</p>
+            </div>
+            <div class="col-4 col-12-medium">
+                <p class="Websites">Morbi enim nascetur et placerat lorem sed iaculis neque ante
+                adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+                Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+                mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+                ipsum dolor nullam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</section>
+<body>
+
+<script>
+var aboutText = document.getElementsByClassName('AboutSection');
+var softwareText = document.getElementsByClassName('SoftwareEngineer');
+var websiteText = document.getElementsByClassName('Websites');
+DisableAll(aboutText);
+DisableAll(softwareText);
+DisableAll(websiteText);
+
+
+function DisableAll(elements)
+{
+    for(var i = 0; i < elements.length; i++) 
+    {
+        elements[i].style.display = "none";
+    }
+}
+
+function DisplayText(elements, currentButton)
+{
+    for(var i = 0; i < elements.length; i++) 
+    {
+        if(elements[i].style.display != "block")
+        {
+            elements[i].style.display = "block";
+        }
+    }
+}
+
+function MoveToAbout()
+{
+
+}
+
+function MoveToSoftEng(){}
+
+function MoveToWebDes(){}
+</script>
+
+</html>
