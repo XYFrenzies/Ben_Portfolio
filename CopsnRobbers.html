@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<link rel="stylesheet" href="CSS_Files/DropDownBar.css" />
+<link rel="stylesheet" href="CSS_Files/DropDownBarDesign.css" />
+<link rel="stylesheet" href="CSS_Files/NewMainMenu.css" />
+
+<style>
+html
+{
+    scroll-behavior: smooth;
+}
+</style>
+
+<!-- ============================================ -->
+<!--                    Common	                  -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container" id="TopOfPage">
+        <!--This section is the icons for LinkedIn and Github!-->
+		<div class="cs-top-social cs-logo">
+			<a href="https://github.com/XYFrenzies" class="cs-social-link">
+				<img class="cs-social-GitHub" src="Images/GitHub_Logo.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+			</a>
+			<a href="https://www.linkedin.com/in/benjamin-mcdonalddev/" class="cs-social-link">
+				<img class="cs-social-LinkedIn" src="Images/Linkedin_Icon.png" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+			</a>
+		</div>
+        <!--Navigation List-->
+        <a href="IndexMain.html#banner" class="cs-button-solid cs-nav-button">Home</a>
+        <nav class="cs-nav" role="navigation">		
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <!--The current dropdown for all classes-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            <a class="cs-button-solid cs-nav-button">Experience</a>
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="IndexMain.html#DisplayAboutSection" class="cs-li-link cs-drop-link">About</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="IndexMain.html#Software_Engineering" class="cs-li-link cs-drop-link">Software Engineer</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="IndexMain.html#Website_Design" class="cs-li-link cs-drop-link">Web Developer</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+		<a href="ContactMe.html" class="cs-button-solid cs-nav-button">Contact Me</a>
+    </div>
+</header>
+
+
+<section id="banner">
+    <div class="content">
+        <img id="PositiviteaIndex" src="Images/Cops_and_Robbers.PNG" aria-hidden="true" decoding="async">  
+            <h1 class="PositiviteaIndex">Cops and Robbers</h1>
+                <div class="col-4 col-12-medium">
+                    <p class="PositiviteaIndex">As part of the 1st years developement of creating a game with AI, Cops and Robbers is based off a robber 
+                        finding as many coins as possible before getting caught by the cop.
+                    <p class="PositiviteaIndex">The AI techniques that used were: A* pathfinding, wander, follow, flee and seek behaviours.</p>
+                    </p>
+                    <p class="PositiviteaIndex">This project was created using C++ openGL.  </p>
+                </div>
+    </div>
+    <div class="col-4 col-12-medium"></div>
+    <a href="https://github.com/XYFrenzies/Cops_And_Robbers" class="cs-button-solid" id="GameIndex">Click to Github Repo</a>  
+    <a href="IndexMain.html#banner" class="cs-button-solid" id="GameIndex">Click to Return</a>
+    </div>
+</section>
+</html>

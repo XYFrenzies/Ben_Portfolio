@@ -1,18 +1,9 @@
 <!DOCTYPE html>
-
-
 <html>
 
 <link rel="stylesheet" href="CSS_Files/DropDownBar.css" />
 <link rel="stylesheet" href="CSS_Files/DropDownBarDesign.css" />
 <link rel="stylesheet" href="CSS_Files/NewMainMenu.css" />
-
-<style>
-html
-{
-    scroll-behavior: smooth;
-}
-</style>
 
 <!-- ============================================ -->
 <!--                    Common	                  -->
@@ -47,7 +38,7 @@ html
                                 <a href="IndexMain.html#Software_Engineering" class="cs-li-link cs-drop-link">Software Engineer</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="IndexMain.html#Website_Design" class="cs-li-link cs-drop-link">Web Developer</a>
+                                <a href="IndexMain.html#Website_Design" class="cs-li-link cs-drop-link">In Progress Projects</a>
                             </li>
                         </ul>
                     </li>
@@ -87,24 +78,15 @@ html
                 <div class="col-4 col-12-medium">
                     <header>
                         <h2>About Me</h2>
-                        <button onclick="DisplayText(aboutText); this.style.display = 'none';" id="About_button"> Click For More </button>
-                        <p1 class="AboutSection">Hi! My Name is Benjamin McDonald and I am a Software Engineer currently working for Light & Wonder!</p1>
+                        <button onclick="DisplayText(aboutText); this.style.display = 'none';" id="About_button" class="cs-button-solid"> Click For More </button>                        
                     </header>
-                    
                 </div>
+                <ul class="AboutSection"><li>Software Engineering</li></ul>
                 <div class="col-4 col-12-medium">
-                    <p class="AboutSection">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-                    Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-                    nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-                    augue varius tempus lobortis porttitor accumsan consequat
-                    adipiscing lorem dolor.</p>
-                </div>
-                <div class="col-4 col-12-medium">
-                    <p class="AboutSection">Morbi enim nascetur et placerat lorem sed iaculis neque ante
-                    adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-                    Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-                    mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-                    ipsum dolor nullam.</p>
+                    <p class="AboutSection">Throughout my 3 years as a professional software engineer, it has taught me about the efficency and the structure of code in a codebase. For instance, at Light & Wonder,
+                    I have learnt to understand the object oriented paradigm and how it helps develop games in the gambling industry. </p>
+                    <p class="AboutSection">At Light & Wonder, my job as a Game Development Kit (GDK) Engineer was
+                    to use this paradigm to help developers override and inherit from our already pre-existing methods and attributes to create symbolic games we see today at clubs and casinos.</p>
                 </div>
             </div>
             <div class="Arrow">
@@ -122,24 +104,17 @@ html
             <div class="col-4 col-12-medium">
                 <header>
                     <h2>Software Engineering</h2>
-                    <button onclick="DisplayText(softwareText); this.style.display = 'none';" id="Software_button"> Click For More </button>
-                    <p class="SoftwareEngineer">I am a Software Engineer Currently working for Light & Wonder</p>
+                    <button onclick="DisplayImages(softwareText); this.style.display = 'none';" id="Software_button" class="cs-button-solid"> Click For More </button>
+                    <p class="SoftwareEngineer">Unity and C# Projects I have worked on!</p>
                 </header>
                 
             </div>
-            <div class="col-4 col-12-medium">
-                <p class="SoftwareEngineer">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-                Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-                nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-                augue varius tempus lobortis porttitor accumsan consequat
-                adipiscing lorem dolor.</p>
-            </div>
-            <div class="col-4 col-12-medium">
-                <p class="SoftwareEngineer">Morbi enim nascetur et placerat lorem sed iaculis neque ante
-                adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-                Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-                mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-                ipsum dolor nullam.</p>
+            <div class="scroll-container">
+                <a href="Positivitea.html"><img id="PositiviTea" class="SoftwareEngineer" src="Images/PositiviTeaOfficial.PNG" alt="PositiviTea" width="400" height="250"/></a>
+                
+                <a href="ArcharyMadness.html"><img id="ArcheryMadness" class="SoftwareEngineer" src="Images/ArcheryMadness.PNG" alt="ArcheryMadness" width="400" height="250"/></a>
+                <a href="CopsnRobbers.html"><img id="Cops_and_Robbers" class="SoftwareEngineer" src="Images/Cops_and_Robbers.PNG" alt="Cops_and_Robbers" width="400" height="250"/></a>
+                <a href="WastelandWanderers.html"><img id="WastelandWanderer" class="SoftwareEngineer" src="Images/WastelandWanderer.PNG" alt="WastelandWanderer" width="400" height="250"/></a>
             </div>
         </div>
         <div class="Arrow">
@@ -156,26 +131,27 @@ html
         <div class="row">
             <div class="col-4 col-12-medium">
                 <header>
-                    <h2>Website Design</h2>
-                    <button onclick="DisplayText(websiteText); this.style.display = 'none';" id="Website_button"> Click For More </button>
-                    <p class="Websites">I am a Software Engineer Currently working for Light & Wonder</p>
+                    <h1>In Progress Projects</h1>
+                    <button onclick="DisplayText(websiteText); this.style.display = 'none';" id="Website_button" class="cs-button-solid"> Click For More </button>
                 </header>
                 
             </div>
+            <ul class="Websites"><li>Gym Website Development</li></ul>
             <div class="col-4 col-12-medium">
-                <p class="Websites">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-                Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-                nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-                augue varius tempus lobortis porttitor accumsan consequat
-                adipiscing lorem dolor.</p>
-            </div>
+                <p class="Websites">Currently in the process of making a website for a Personal Trainer! I am using html, css, javascript and will eventually use
+                    php and other backend programs.</p>
+                    <a href="https://github.com/XYFrenzies/Andrew_Bloom_Website" class="cs-button-solid Websites">Click to Github Repo</a>  
+                </div>
+            <ul class="Websites"><li>Modular RPG System</li></ul>
             <div class="col-4 col-12-medium">
-                <p class="Websites">Morbi enim nascetur et placerat lorem sed iaculis neque ante
-                adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-                Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-                mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-                ipsum dolor nullam.</p>
-            </div>
+                <p class="Websites"> I am currently doing a more updated version of the Modular RPG system i worked on a few years ago. Whats involved in this is 
+                    the developer can use different attributes and values to make any type of item, stat, move etc using C# and Unity.
+                </p>
+                <p class="Websites"> This is the link to the older Modular RPG System: </p>
+                <a href="https://github.com/XYFrenzies/Complex_Game_Engines" class="cs-button-solid Websites">Click to Github Repo</a>  
+                <p class="Websites"> This is the link to the In Progress Modular RPG System: </p>
+                <a href="https://github.com/XYFrenzies/Modular_RPG_System" class="cs-button-solid Websites">Click to Github Repo</a>  
+                </div>
         </div>
     </div>
 </div>
@@ -192,7 +168,6 @@ DisableAll(aboutText);
 DisableAll(softwareText);
 DisableAll(websiteText);
 
-
 function DisableAll(elements)
 {
     for(var i = 0; i < elements.length; i++) 
@@ -201,7 +176,7 @@ function DisableAll(elements)
     }
 }
 
-function DisplayText(elements, currentButton)
+function DisplayText(elements)
 {
     for(var i = 0; i < elements.length; i++) 
     {
@@ -212,14 +187,16 @@ function DisplayText(elements, currentButton)
     }
 }
 
-function MoveToAbout()
+function DisplayImages(elements)
 {
-
+    for(var i = 0; i < elements.length; i++) 
+    {
+        if(elements[i].style.display != "inline-block")
+        {
+            elements[i].style.display = "inline-block";
+        }
+    }
 }
-
-function MoveToSoftEng(){}
-
-function MoveToWebDes(){}
 </script>
-
 </html>
+

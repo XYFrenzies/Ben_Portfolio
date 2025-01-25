@@ -1,5 +1,10 @@
 /* Banner */
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 #banner {
     background-attachment: fixed;
     background-color: #222222;
@@ -94,14 +99,15 @@
         color: #ffffff;
     }
 
-    #banner .About p {
-        font-size: 1em;
-        text-align: center;
+    #banner .About ul {
+        font-size: 1.7em;
+        text-align: left;
         color: #ffffff;
     }
-    #banner .About p1 {
+
+    #banner .About p {
         font-size: 1.5em;
-        text-align: center;
+        text-align: left;
         color: #ffffff;
     }
 
@@ -128,6 +134,30 @@
         text-align: center;
         color: #ffffff;
     }
+    #banner .Software_Engineering_Section .scroll-container {
+        background-color: #3333335d;
+        overflow: auto;
+        white-space: nowrap;
+        overflow-x: hidden;        
+    }
+    @keyframes scroll
+    {
+        from
+        {
+            transform: translate(0);
+        }
+        to
+        {
+            transform: translateX(-200%)
+        }
+    }
+
+    #banner .Software_Engineering_Section .scroll-container img{
+        display: inline-block;
+        animation: 8s scroll linear infinite;
+        padding: 10px;
+    }
+
     #banner .Website_Design_Section {
         display: inline-block;
         max-width: 95%;
@@ -139,17 +169,25 @@
     }
 
 
-    #banner .Website_Design_Section header h2 {
+    #banner .Website_Design_Section h1 {
         font-size: 2.5em;
         margin: 0;
         padding: 1em;
         color: #ffffff;
     }
 
-    #banner .Website_Design_Section header p {
-        font-size: 1.5em;
-        text-align: center;
+    #banner .Website_Design_Section ul {
+        font-size: 2.5em;
+        margin: 0;
+        padding: 1em;
         color: #ffffff;
+        text-align: left;
+    }
+
+    #banner .Website_Design_Section p {
+        font-size: 1.5em;
+        color: #ffffff;
+        text-align: left;
     }
 
     #banner .AboutArrows
@@ -159,5 +197,119 @@
         margin-right: auto;
         margin-top: 150px;
     } 
+
+    #banner .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875em, 5.5vw, 3.5em);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        padding: 0 2rem;
+        background-color: var(--primary);
+        overflow: visible;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        transition: color .3s;
+      }
+      #banner .cs-button-solid:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #1a1a1a;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width .3s;
+      }
+      #banner .cs-button-solid:hover:before {
+        width: 100%;
+      }
+      #banner .cs-nav-button {
+        line-height: 2.875rem;
+        margin-left: 1.5rem;
+      }
+      #PositiviTea {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #PositiviTea:hover {opacity: 0.5;}
+    
+      #ArcheryMadness {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #ArcheryMadness:hover {opacity: 0.5;}
+    
+      #Cops_and_Robbers {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #Cops_and_Robbers:hover {opacity: 0.5;}
+    
+      #WastelandWanderer {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      #WastelandWanderer:hover {opacity: 0.5;}
+
+
+      #PositiviteaIndex
+      {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .PositiviteaIndex
+      {
+        text-align: center;
+        color: #fff;
+      }
+
+      #GameIndex
+      {
+        display: inline-block;
+        max-width: 95%;
+        padding: 20em;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 1;
+      }
+
+      #banner .ContactMeSection p {
+        font-size: 1.5em;
+        color: #ffffff;
+        text-align: left;
+        }
+        #banner .ContactMeSection h1 {
+            font-size: 1.5em;
+            color: #ffffff;
+            text-align: center;
+        }
+        #banner .ContactMeSection h1 {
+            font-size: 1.5em;
+            color: #ffffff;
+            text-align: center;
+        }
+
+
+
+
 
 
